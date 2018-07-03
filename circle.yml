@@ -2,7 +2,7 @@ machine:
   services:
     - docker
 
-deoendencies:
+dependencies:
   override:
     - docker build -t amz . 
 

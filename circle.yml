@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+deoendencies:
+  override:
+    - docker build -t amz
+
+test:
+  override:
+    - docker run amz npm test

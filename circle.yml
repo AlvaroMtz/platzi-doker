@@ -1,11 +1,20 @@
 machine:
+  node:
+    version: 6.1.0
   services:
     - docker
 
-dependencies:
+dep
+endencies:
   override:
     - docker build -t amz . 
 
 test:
   override:
     - docker run amz npm test
+
+deployment:
+  qa: 
+    branch: /featture_.*/
+    comands:
+      - sh deployments/qa.sh

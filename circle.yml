@@ -4,8 +4,7 @@ machine:
   services:
     - docker
 
-dep
-endencies:
+dependencies:
   override:
     - docker build -t amz . 
 
